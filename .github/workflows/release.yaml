@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
@@ -34,6 +34,9 @@ jobs:
   release-to-harbor:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
       - name: Run Harbor chartmuseum releaser
         run: |
 
@@ -45,6 +48,8 @@ jobs:
           
           helm plugin install https://github.com/chartmuseum/helm-push
           helm repo add jondos https://harbor.kube.jondos.de/chartrepo/jondos-internal-services --username ${{ secrets.HARBOR_USERNAME }} --password ${{ secrets.HARBOR_PASSWORD }} 
+
+          ls -al
 
           # lint first
           for dir in $(ls -d charts/*/); do
