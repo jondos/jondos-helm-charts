@@ -82,7 +82,6 @@ ingress:
 ## You can also reference to a specific secret with a TLS certificate
 #  secretName: my-own-tls-secret
 
-
 ## Add volume mounts to your application
 ## for creating a pvc (persistent volume claim) use following
 # volumes:
