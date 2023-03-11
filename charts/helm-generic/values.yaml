@@ -18,6 +18,7 @@ nameOverride: ""
 fullnameOverride: ""
 
 namespace: default
+createNamespace: false
 
 ## Specifies port of container, default for openliberty containers is 9080
 containerPort: 80

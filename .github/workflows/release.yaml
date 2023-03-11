@@ -57,6 +57,12 @@ jobs:
             helm lint $dir
           done
 
+          # build and update dependencies
+          for dir in $(ls -d charts/*/); do
+            helm dependency build $dir
+            helm dependency update $dir
+          done
+
           # then package
           for dir in $(ls -d charts/*/); do
             tgz_name=$(helm package $dir | awk {'print $8'} | xargs basename)
