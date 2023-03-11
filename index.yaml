@@ -18,6 +18,21 @@ entries:
     version: 1.0.0
   jondos-generic:
   - apiVersion: v2
+    created: "2023-03-11T18:58:28.001036509Z"
+    description: A generic Helm chart for deployments.
+    digest: 7ec8b162297402f5beefd724c7acb87d07556e475ce0507099a678dbff7c4f2f
+    maintainers:
+    - email: salih.kayiplar@gmail.com
+      name: Salih Kayiplar
+      url: https://github.com/kayiplar
+    name: jondos-generic
+    sources:
+    - https://github.com/jondos/jondos-helm-charts
+    type: application
+    urls:
+    - https://github.com/jondos/jondos-helm-charts/releases/download/jondos-generic-2.0.1/jondos-generic-2.0.1.tgz
+    version: 2.0.1
+  - apiVersion: v2
     created: "2022-12-09T11:00:12.49234388Z"
     description: A generic Helm chart for deployments.
     digest: 0fc7c988829b62f49b64200bebcb5c74ed030bf2a5c71a349d8ac75bf65cb742
@@ -47,4 +62,4 @@ entries:
     urls:
     - https://github.com/jondos/jondos-helm-charts/releases/download/jondos-generic-1.0.0/jondos-generic-1.0.0.tgz
     version: 1.0.0
-generated: "2022-12-09T11:00:12.492351481Z"
+generated: "2023-03-11T18:58:28.001049609Z"
