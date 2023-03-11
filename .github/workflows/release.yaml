@@ -68,3 +68,4 @@ jobs:
             tgz_name=$(helm package $dir | awk {'print $8'} | xargs basename)
             helm cm-push $tgz_name jondos
           done
+          
