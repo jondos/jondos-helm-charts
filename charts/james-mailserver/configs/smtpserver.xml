@@ -39,7 +39,7 @@
             <plainAuthEnabled>true</plainAuthEnabled>
         </auth>
         <verifyIdentity>false</verifyIdentity>
-        <proxyRequired>false</proxyRequired>
+        <proxyRequired>true</proxyRequired>
         <maxmessagesize>${env:JAMES_MESSAGE_SIZE}</maxmessagesize>
         <addressBracketsEnforcement>true</addressBracketsEnforcement>
         <smtpGreeting>${env:JAMES_SMTP_MESSAGE}</smtpGreeting>
@@ -62,7 +62,7 @@
         <connectionLimitPerIP>0</connectionLimitPerIP>
         <authRequired>true</authRequired>
         <verifyIdentity>true</verifyIdentity>
-        <proxyRequired>false</proxyRequired>
+        <proxyRequired>true</proxyRequired>
         <maxmessagesize>${env:JAMES_MESSAGE_SIZE}</maxmessagesize>
         <addressBracketsEnforcement>true</addressBracketsEnforcement>
         <smtpGreeting>${env:JAMES_SMTP_MESSAGE}</smtpGreeting>
