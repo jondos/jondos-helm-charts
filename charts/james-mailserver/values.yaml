@@ -37,6 +37,7 @@ james:
     jamesEsMailboxWriteAlias: "write-mailbox"
     jamesRabbitHost: "rabbitmq.james-mailserver.svc"
     jamesMessageSize: 25M
+    jamesProxyRequired: false
     jamesDkimSignSmtp: "dkimselector"
     jamesDkimSignDomain: "mail.kube.jondos.de"
     cassandraReplicationFactor: 3

@@ -154,6 +154,8 @@ spec:
           value: "{{ .Values.james.env.jamesEsMailboxWriteAlias }}"
         - name: JAMES_MESSAGE_SIZE
           value: "{{ .Values.james.env.jamesMessageSize }}"
+        - name: JAMES_PROXY_REQUIRED
+          value: "{{ .Values.james.env.jamesProxyRequired }}"
         - name: JAVA_TOOL_OPTIONS
           value: "{{ $jamesOpts }}"
         ports:

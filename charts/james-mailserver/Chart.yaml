@@ -2,7 +2,7 @@ apiVersion: v2
 name: james-mailserver
 description: A Helm chart for Distributed Apache James.
 type: application
-version: 2.1.1
+version: 2.1.2
 
 sources:
   - https://github.com/jondos/jondos-helm-charts
