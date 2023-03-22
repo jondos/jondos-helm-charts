@@ -2,6 +2,21 @@ apiVersion: v1
 entries:
   james-mailserver:
   - apiVersion: v2
+    created: "2023-03-22T14:20:38.062368027Z"
+    description: A Helm chart for Distributed Apache James.
+    digest: 264727f41c1bac1419ac8b117ae83230044e527a068b77c3408ce2a2c971640c
+    maintainers:
+    - email: salih.kayiplar@gmail.com
+      name: Salih Kayiplar
+      url: https://github.com/kayiplar
+    name: james-mailserver
+    sources:
+    - https://github.com/jondos/jondos-helm-charts
+    type: application
+    urls:
+    - https://github.com/jondos/jondos-helm-charts/releases/download/james-mailserver-2.1.1/james-mailserver-2.1.1.tgz
+    version: 2.1.1
+  - apiVersion: v2
     created: "2022-12-09T11:00:12.309322331Z"
     description: A Helm chart for Distributed Apache James.
     digest: 23719f9c4ca73c4d3eabe2d2356f81917ebd6a97112290a9e07e8f69eee7d486
@@ -62,4 +77,4 @@ entries:
     urls:
     - https://github.com/jondos/jondos-helm-charts/releases/download/jondos-generic-1.0.0/jondos-generic-1.0.0.tgz
     version: 1.0.0
-generated: "2023-03-11T18:58:28.001049609Z"
+generated: "2023-03-22T14:20:38.062378827Z"
