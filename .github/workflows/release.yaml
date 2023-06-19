@@ -48,7 +48,7 @@ jobs:
 
       - name: Add repositories
         run: | 
-          helm repo add jondos https://harbor.kube.jondos.de/chartrepo/jondos-internal-services --username ${{ secrets.HARBOR_USERNAME }} --password ${{ secrets.HARBOR_PASSWORD }} 
+          helm repo add jondos https://harbor.kube.jondos.de/chartrepo/jondos-internal-services --username '${{ secrets.HARBOR_USERNAME }}' --password '${{ secrets.HARBOR_PASSWORD }}' 
 
       - name: Publish helm charts to JonDos Harbor
         run: |
